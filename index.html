@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>هوية بصرية - عرض</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:#ccc;font-family:system-ui,Segoe UI,Arial;direction:rtl;display:flex;justify-content:center;padding:20px 0;}
+    .splash{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#000;z-index:50;}
+    .splash .card{text-align:center;padding:20px;color:#fff;}
+    .splash h1{margin-bottom:10px;font-size:24px;}
+    .splash p{margin-bottom:15px;font-size:14px;opacity:.8;}
+    .enter-btn{display:inline-block;padding:10px 18px;border-radius:8px;background:#fff;color:#000;text-decoration:none;font-weight:600;cursor:pointer;}
+    .container{display:none;width:800px;}
+    .page{background:#fff;margin-bottom:30px;box-shadow:0 4px 12px rgba(0,0,0,0.3);display:flex;justify-content:center;}
+    .page img{width:100%;height:auto;display:block;}
+  </style>
+</head>
+<body>
+
+  <div class="splash" id="splash">
+    <div class="card">
+      <h1>معاينة الهوية البصرية</h1>
+      <p>اضغط "دخول" لدخول الموقع</p>
+      <a class="enter-btn" id="enterBtn">دخول</a>
+    </div>
+  </div>
+
+  <div class="container" id="container">
+    <div class="page"><img src="images/1.png" alt="1"></div>
+    <div class="page"><img src="images/2.png" alt="2"></div>
+    <div class="page"><img src="images/3.png" alt="3"></div>
+    <div class="page"><img src="images/4.png" alt="4"></div>
+    <div class="page"><img src="images/5.png" alt="5"></div>
+    <div class="page"><img src="images/6.png" alt="6"></div>
+    <div class="page"><img src="images/7.png" alt="7"></div>
+    <div class="page"><img src="images/8.png" alt="8"></div>
+    <div class="page"><img src="images/9.png" alt="9"></div>
+    <div class="page"><img src="images/10.png" alt="10"></div>
+    <div class="page"><img src="images/11.png" alt="11"></div>
+    <div class="page"><img src="images/12.png" alt="12"></div>
+    <div class="page"><img src="images/13.png" alt="13"></div>
+    <div class="page"><img src="images/14.png" alt="14"></div>
+    <div class="page"><img src="images/15.png" alt="15"></div>
+    <div class="page"><img src="images/16.png" alt="16"></div>
+    <div class="page"><img src="images/17.png" alt="17"></div>
+    <div class="page"><img src="images/18.png" alt="18"></div>
+    <div class="page"><img src="images/19.png" alt="19"></div>
+    <div class="page"><img src="images/20.png" alt="20"></div>
+    <div class="page"><img src="images/21.png" alt="21"></div>
+    <div class="page"><img src="images/22.png" alt="22"></div>
+    <div class="page"><img src="images/23.png" alt="23"></div>
+    <div class="page"><img src="images/24.png" alt="24"></div>
+  </div>
+
+  <script>
+    const splash = document.getElementById("splash");
+    const enterBtn = document.getElementById("enterBtn");
+    const container = document.getElementById("container");
+
+    enterBtn.addEventListener("click",()=>{
+      splash.style.display="none";
+      container.style.display="block";
+    });
+  </script>
+</body>
+</html>
